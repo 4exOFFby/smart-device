@@ -1,0 +1,13 @@
+.logo-link__icon--short {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .logo-link__icon--full {
+    display: none;
+  }
+
+  .logo-link__icon--short {
+    display: block;
+  }
+}
