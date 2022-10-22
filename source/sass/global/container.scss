@@ -20,14 +20,13 @@
 @media (max-width: 1023px) {
   .container {
     max-width: 1020px;
-    padding: 0 70px 0 50px;
-    box-sizing: border-box;
+    padding: 0 50px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     max-width: 669px;
-    padding: 0 35px 0 26px;
+    padding: 0 26px 0 26px;
   }
 }

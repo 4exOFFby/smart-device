@@ -1,3 +1,6 @@
 .main-header {
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  position: relative;
+  z-index: 2;
+  margin-bottom: -19px;
 }
