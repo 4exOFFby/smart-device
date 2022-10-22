@@ -1,0 +1,52 @@
+.about-as {
+  padding-bottom: 120px;
+
+  .about-as__container {
+    padding-left: 250px;
+    background-image: url("../img/png/years-number.png");
+    background-repeat: no-repeat;
+    background-position: 25px top;
+  }
+
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: #041827;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #041827;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-as {
+    padding-bottom: 80px;
+
+    .about-as__container {
+      padding-left: 200px;
+      background-position: 25px top;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-as {
+    .about-as__container {
+      background-image: none;
+      padding-left: 25px;
+    }
+  }
+}
