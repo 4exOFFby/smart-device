@@ -1,0 +1,235 @@
+.feedback-form {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+  width: 580px;
+
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: #ffffff;
+    margin: 0;
+    grid-column: 1/-1;
+  }
+
+  p {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    margin: 0;
+  }
+}
+
+.feedback-form__field {
+  input {
+    width: 275px;
+    height: 50px;
+    background-color: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    padding: 15px;
+  }
+
+  input::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+
+.feedback-form__field--submit {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.feedback-form__field--approval {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  padding-left: 30px;
+
+  label {
+    position: relative;
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  label::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    top: 11px;
+    left: -30px;
+    cursor: pointer;
+  }
+
+  input:checked + label::before {
+    background-image: url("../img/svg/approval-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.feedback-form__field--question {
+  grid-column: 1/-1;
+
+  textarea {
+    width: 100%;
+    height: 185px;
+    resize: none;
+    background-color: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+  }
+
+  textarea::placeholder {
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+
+.feedback-form--modal {
+  position: relative;
+  margin-left: 0;
+  background-color: #00b3ff;
+  border-radius: 3px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+  h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  input {
+    width: 420px;
+  }
+
+  .feedback-form__field--approval {
+    order: 2;
+
+    label::before {
+      top: 0;
+      left: -28px;
+    }
+  }
+
+  .feedback-form__button-submit {
+    width: 420px;
+  }
+
+  .feedback-form__button-close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .feedback-form__close-icon {
+    color: #ffffff;
+  }
+}
+
+.feedback-form--open {
+  position: fixed;
+}
+
+
+@media (max-width: 1023px) {
+  .feedback-form {
+    margin: 0 auto;
+    width: 670px;
+    max-width: 800px;
+  }
+
+  .feedback-form__field {
+    input {
+      width: 100%;
+    }
+  }
+
+  .feedback-form__field--approval {
+    width: 235px;
+
+    input {
+      width: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    max-width: 630px;
+
+    h2 {
+      font-size: 30px;
+      line-height: 42px;
+    }
+  }
+
+  .feedback-form__field {
+    width: 100%;
+  }
+
+  .feedback-form__field--approval {
+    width: 230px;
+    order: 2;
+
+    label::before {
+      top: 10px;
+      left: -30px;
+    }
+  }
+}

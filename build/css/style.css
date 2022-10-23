@@ -1166,7 +1166,7 @@ button,
   line-height: 22px;
   color: #041827;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .products {
@@ -1246,7 +1246,7 @@ button,
   background-position: 0 90px;
 }
 
-.feedback__form {
+.feedback-form {
   margin-left: auto;
   display: -ms-grid;
   display: grid;
@@ -1259,7 +1259,7 @@ button,
   width: 580px;
 }
 
-.feedback__form h2 {
+.feedback-form h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1270,7 +1270,7 @@ button,
   grid-column: 1/-1;
 }
 
-.feedback__form p {
+.feedback-form p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1284,7 +1284,7 @@ button,
   margin: 0;
 }
 
-.feedback__form-field input {
+.feedback-form__field input {
   width: 275px;
   height: 50px;
   background-color: rgba(4, 20, 39, 0.15);
@@ -1299,7 +1299,7 @@ button,
   padding: 15px;
 }
 
-.feedback__form-field input::-webkit-input-placeholder {
+.feedback-form__field input::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1308,7 +1308,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field input::-moz-placeholder {
+.feedback-form__field input::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1317,7 +1317,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field input:-ms-input-placeholder {
+.feedback-form__field input:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1326,7 +1326,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field input::-ms-input-placeholder {
+.feedback-form__field input::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1335,7 +1335,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field input::placeholder {
+.feedback-form__field input::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1344,7 +1344,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field--submit {
+.feedback-form__field--submit {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -1353,7 +1353,7 @@ button,
   grid-row: 5/6;
 }
 
-.feedback__form-field--approval {
+.feedback-form__field--approval {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1363,7 +1363,7 @@ button,
   padding-left: 30px;
 }
 
-.feedback__form-field--approval label {
+.feedback-form__field--approval label {
   position: relative;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
@@ -1375,7 +1375,7 @@ button,
   cursor: pointer;
 }
 
-.feedback__form-field--approval label::before {
+.feedback-form__field--approval label::before {
   content: "";
   width: 15px;
   height: 15px;
@@ -1387,17 +1387,17 @@ button,
   cursor: pointer;
 }
 
-.feedback__form-field--approval input:checked + label::before {
+.feedback-form__field--approval input:checked + label::before {
   background-image: url("../img/svg/approval-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.feedback__form-field--question {
+.feedback-form__field--question {
   grid-column: 1/-1;
 }
 
-.feedback__form-field--question textarea {
+.feedback-form__field--question textarea {
   width: 100%;
   height: 185px;
   resize: none;
@@ -1408,7 +1408,7 @@ button,
   border: none;
 }
 
-.feedback__form-field--question textarea::-webkit-input-placeholder {
+.feedback-form__field--question textarea::-webkit-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1417,7 +1417,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field--question textarea::-moz-placeholder {
+.feedback-form__field--question textarea::-moz-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1426,7 +1426,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field--question textarea:-ms-input-placeholder {
+.feedback-form__field--question textarea:-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1435,7 +1435,7 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field--question textarea::-ms-input-placeholder {
+.feedback-form__field--question textarea::-ms-input-placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1444,13 +1444,110 @@ button,
   color: #ffffff;
 }
 
-.feedback__form-field--question textarea::placeholder {
+.feedback-form__field--question textarea::placeholder {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.feedback-form--modal {
+  position: relative;
+  margin-left: 0;
+  background-color: #00b3ff;
+  border-radius: 3px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 500px;
+}
+
+.feedback-form--modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.feedback-form--modal p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback-form--modal input {
+  width: 420px;
+}
+
+.feedback-form--modal .feedback-form__field--approval {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.feedback-form--modal .feedback-form__field--approval label::before {
+  top: 0;
+  left: -28px;
+}
+
+.feedback-form--modal .feedback-form__button-submit {
+  width: 420px;
+}
+
+.feedback-form--modal .feedback-form__button-close {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.feedback-form--modal .feedback-form__close-icon {
+  color: #ffffff;
+}
+
+.feedback-form--open {
+  position: fixed;
+}
+
+.modal-feedback {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(3, 16, 27, 0.7);
+  z-index: 2;
+}
+
+.modal-feedback--close {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -1493,6 +1590,14 @@ button,
     }
   }
 */
+
+@media (min-width: 1024px) {
+  .main-header--sticky {
+    position: sticky;
+    width: 100%;
+    top: 0;
+  }
+}
 
 @media (max-width: 1439px) {
   .container {
@@ -1696,21 +1801,21 @@ button,
     background-image: none;
   }
 
-  .feedback__form {
+  .feedback-form {
     margin: 0 auto;
     width: 670px;
     max-width: 800px;
   }
 
-  .feedback__form-field input {
+  .feedback-form__field input {
     width: 100%;
   }
 
-  .feedback__form-field--approval {
+  .feedback-form__field--approval {
     width: 235px;
   }
 
-  .feedback__form-field--approval input {
+  .feedback-form__field--approval input {
     width: 30px;
   }
 }
@@ -1802,7 +1907,9 @@ button,
   }
 
   .main-footer__categories-list {
+    display: none;
     width: 100%;
+    margin-top: 15px;
   }
 
   .main-footer__categories-list--navigation {
@@ -1817,6 +1924,10 @@ button,
     border-bottom: 2px solid rgba(248, 253, 255, 0.7);
   }
 
+  .main-footer__categories-wrapper:nth-child(even) {
+    border-bottom: none;
+  }
+
   .main-footer__categories-title-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1827,6 +1938,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .main-footer__categories-button {
@@ -1852,9 +1964,27 @@ button,
     position: absolute;
     top: 10px;
     left: 4px;
-    width: 15px;
-    height: 2px;
+    width: 16px;
+    height: 3px;
     background-color: #c4c4c4;
+  }
+
+  .main-footer__categories-button::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    width: 3px;
+    height: 16px;
+    background-color: #c4c4c4;
+  }
+
+  .main-footer__categories-list--opened {
+    display: block;
+  }
+
+  .main-footer__categories-button--opened::after {
+    display: none;
   }
 
   .footer-grid-container {
@@ -1973,7 +2103,7 @@ button,
     padding: 50px 0 90px 0;
   }
 
-  .feedback__form {
+  .feedback-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1988,23 +2118,23 @@ button,
     max-width: 630px;
   }
 
-  .feedback__form h2 {
+  .feedback-form h2 {
     font-size: 30px;
     line-height: 42px;
   }
 
-  .feedback__form-field {
+  .feedback-form__field {
     width: 100%;
   }
 
-  .feedback__form-field--approval {
+  .feedback-form__field--approval {
     width: 230px;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
-  .feedback__form-field--approval label::before {
+  .feedback-form__field--approval label::before {
     top: 10px;
     left: -30px;
   }
