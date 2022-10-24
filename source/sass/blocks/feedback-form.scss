@@ -1,9 +1,10 @@
 .feedback-form {
   margin-left: auto;
+  margin-right: 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-  row-gap: 20px;
+  column-gap: 27px;
+  row-gap: 7px;
   width: 580px;
 
   h2 {
@@ -27,10 +28,16 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     margin: 0;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-bottom: 7px;
   }
 }
 
 .feedback-form__field {
+  margin-top: 20px;
+  margin-left: 4px;
+
   input {
     width: 275px;
     height: 50px;
@@ -64,7 +71,7 @@
 .feedback-form__field--approval {
   grid-column: 2/3;
   grid-row: 5/6;
-  padding-left: 30px;
+  padding-left: 36px;
 
   label {
     position: relative;
@@ -85,8 +92,8 @@
     border: 1px solid #ffffff;
     border-radius: 2px;
     position: absolute;
-    top: 11px;
-    left: -30px;
+    top: 15px;
+    left: -27px;
     cursor: pointer;
   }
 
@@ -99,16 +106,20 @@
 
 .feedback-form__field--question {
   grid-column: 1/-1;
+  margin-bottom: 4px;
+  margin-top: 14px;
 
   textarea {
     width: 100%;
-    height: 185px;
+    height: 153px;
     resize: none;
     background-color: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
     padding: 15px;
+    padding-top: 22px;
     color: #ffffff;
     border: none;
+    box-sizing: border-box;
   }
 
   textarea::placeholder {
@@ -126,27 +137,36 @@
   margin-left: 0;
   background-color: #00b3ff;
   border-radius: 3px;
-  padding: 40px;
+  padding: 35px 36px 40px;
   display: flex;
   flex-direction: column;
   width: 500px;
+  min-height: 610px;
 
   h2 {
     font-size: 30px;
     line-height: 42px;
+    margin-bottom: 0;
   }
 
   p {
     font-size: 16px;
     line-height: 22px;
+    margin: 0;
+    margin-bottom: 18px;
   }
 
   input {
     width: 420px;
   }
 
+  .feedback-form__field {
+    margin-top: 12px;
+  }
+
   .feedback-form__field--approval {
     order: 2;
+    margin-top: 5px;
 
     label::before {
       top: 0;
@@ -188,20 +208,46 @@
     margin: 0 auto;
     width: 670px;
     max-width: 800px;
+
+    p {
+      margin: 0;
+    }
   }
 
   .feedback-form__field {
+    margin-top: 18px;
+    margin-left: 1px;
+
     input {
       width: 100%;
     }
   }
 
+  .feedback-form__field--question {
+    margin-top: 14px;
+
+    textarea {
+      padding-top: 29px;
+    }
+  }
+
+  .feedback-form__field--submit {
+    margin-top: 19px;
+  }
+
   .feedback-form__field--approval {
     width: 235px;
+    margin-top: 23px;
+    padding-left: 26px;
 
     input {
       width: 30px;
     }
+  }
+
+  .feedback-form__field--approval label::before {
+    top: 7px;
+    left: -25px;
   }
 }
 
@@ -217,19 +263,43 @@
       font-size: 30px;
       line-height: 42px;
     }
+
+    p {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   .feedback-form__field {
     width: 100%;
+    margin-top: 26px;
   }
 
   .feedback-form__field--approval {
     width: 230px;
     order: 2;
+    margin-top: 12px;
 
     label::before {
-      top: 10px;
-      left: -30px;
+      top: 7px;
+      left: -23px;
     }
+  }
+
+  .feedback-form__field--question {
+    margin-top: 15px;
+
+    textarea {
+      min-height: 180px;
+      padding-top: 20px;
+    }
+  }
+
+  .feedback-form__field--number {
+    margin-top: 13px;
+  }
+
+  .feedback-form__field--submit {
+    margin-top: 11px;
   }
 }

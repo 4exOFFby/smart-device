@@ -26,15 +26,18 @@
   padding: 10px 0 10px 35px;
   background-position: left center;
   background-repeat: no-repeat;
+  display: block;
 }
 
 
 .navigation-info__link--mail {
   background-image: url("../img/svg/email-icon.svg");
+  margin-bottom: 6px;
 }
 
 .navigation-info__link--tell {
   background-image: url("../img/svg/phone-call-icon.svg");
+  margin-bottom: 6px;
 }
 
 @media (max-width: 1023px) {
@@ -65,6 +68,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-left: auto;
+    margin-bottom: 6px;
   }
 }
 
@@ -78,5 +82,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: auto;
+    margin-right: 10px;
+    margin-top: 5px;
   }
 }

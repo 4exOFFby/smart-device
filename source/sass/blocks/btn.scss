@@ -38,6 +38,10 @@
   color: #f2f5f7;
   border: 1px solid #f2f5f7;
   border-radius: 3px;
+  display: flex;
+  width: 160px;
+  min-height: 40px;
+  padding: 10px 15px;
 }
 
 .btn--form-call {
@@ -53,6 +57,9 @@
   background-color: #00b2ff;
   border-radius: 3px;
   padding: 15px 25px;
+  display: flex;
+  width: 410px;
+  min-height: 55px;
 
   @media (max-width: 767px) {
     font-size: 14px;
@@ -61,6 +68,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    min-height: 40px;
   }
 }
 
@@ -82,7 +90,13 @@
   justify-content: center;
   width: 180px;
   min-height: 45px;
-  margin-top: 20px;
+  margin-top: 40px;
+
+  @media (max-width: 766px) {
+    width: 160px;
+    min-height: 35px;
+    padding: 8px 15px 8px 12px;
+  }
 }
 
 .btn--product {

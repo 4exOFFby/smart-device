@@ -1,11 +1,18 @@
 .about-as {
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 
   .about-as__container {
     padding-left: 250px;
+    padding-bottom: 20px;
     background-image: url("../img/png/years-number.png");
     background-repeat: no-repeat;
-    background-position: 25px top;
+    background-position: 0 top;
+
+    @media (min-resolution: 2dppx) {
+      .about-as__container {
+        background-image: url("../img/png/years-number-retina.png");
+      }
+    }
   }
 
   h2 {
@@ -16,7 +23,7 @@
     line-height: 51px;
     color: #041827;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   p {
@@ -27,26 +34,51 @@
     line-height: 22px;
     color: #041827;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 21px;
   }
 }
 
 @media (max-width: 1023px) {
   .about-as {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 
     .about-as__container {
-      padding-left: 200px;
-      background-position: 25px top;
+      padding-left: 225px;
+      background-position: 45px 5px;
     }
+  }
+
+  .about-as__link {
+    margin-top: -7px;
   }
 }
 
 @media (max-width: 767px) {
   .about-as {
+    h2 {
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 10px;
+    }
+
     .about-as__container {
       background-image: none;
       padding-left: 25px;
+    }
+  }
+
+  .about-as__link {
+    margin-top: -10px;
+  }
+
+  .about-as__text-wrapper {
+    p {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    span {
+      display: none;
     }
   }
 }
