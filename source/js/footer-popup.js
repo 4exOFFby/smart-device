@@ -1,6 +1,8 @@
+const footerPopupContainers = document.querySelectorAll('.main-footer__categories-wrapper');
 const footerButtons = document.querySelectorAll('.main-footer__categories-button');
 const footerLists = document.querySelectorAll('.main-footer__categories-list');
 
+footerPopupContainers.forEach((item) => item.classList.remove('main-footer__categories-wrapper--no-js'));
 
 const footerMenuHandler = (evt, indexOn, indexOff) => {
   evt.target.classList.toggle('main-footer__categories-button--opened');

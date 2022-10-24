@@ -117,8 +117,10 @@
             </p>
             <p>
               Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+              <span>
+                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+              </span>
             </p>
             <p>
               Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день.
@@ -146,31 +148,40 @@
                 <a class="product-card__link" href="#">
                   <h3>Производство печатных плат</h3>
                   <button class="product-card__button btn btn--product" href="#"></button>
-                  <img class="product-card__image product-card__image--desktop" width="350" height="650" src="./img/jpg/product-card-1.jpg" srcset="./img/jpg/product-card-1-retina.jpg" alt="Образец печатной платы.">
-                  <img class="product-card__image product-card__image--tablet" width="670" height="250" src="./img/jpg/product-card-tablet-1.jpg" srcset="./img/jpg/product-card-tablet-1-retina.jpg" alt="Образец печатной платы.">
-                  <img class="product-card__image product-card__image--mobile" width="270" height="250" src="./img/jpg/product-card-mobile-1.jpg" srcset="./img/jpg/product-card-mobile-1-retina.jpg" alt="Образец печатной платы.">
+                  <div class="product-card__image-wrapper product-card__image-wrapper--1">
+                    <picture>
+                      <source type="image/webp" srcset="./img/jpg/main-background.webp 1x, ./img/jpg/main-background-retina.webp 2x">
+                      <img src="./img/jpg/main-background.jpg" srcset="./img/jpg/main-background-retina.jpg 2x" width="1920" height="880" alt="Образец микросхемы.">
+                    </picture>
+                  </div>
                 </a>
               </article>
             </li>
             <li class="products-list__item">
               <article class="product-card">
                 <a class="product-card__link" href="#">
-                  <h3>Монтаж печатных плат</h3>
+                  <h3>Монтаж<br> печатных плат</h3>
                   <button class="product-card__button btn btn--product" href="#"></button>
-                  <img class="product-card__image product-card__image--desktop" width="350" height="650" src="./img/jpg/product-card-2.jpg" srcset="./img/jpg/product-card-2-retina.jpg" alt="Образец монтажа печатной платы.">
-                  <img class="product-card__image product-card__image--tablet" width="670" height="250" src="./img/jpg/product-card-tablet-2.jpg" srcset="./img/jpg/product-card-tablet-2-retina.jpg" alt="Образец печатной платы.">
-                  <img class="product-card__image product-card__image--mobile" width="270" height="250" src="./img/jpg/product-card-mobile-2.jpg" srcset="./img/jpg/product-card-mobile-2-retina.jpg" alt="Образец печатной платы.">
+                  <div class="product-card__image-wrapper product-card__image-wrapper--2">
+                    <picture>
+                      <source type="image/webp" srcset="./img/jpg/main-background.webp 1x, ./img/jpg/main-background-retina.webp 2x">
+                      <img src="./img/jpg/main-background.jpg" srcset="./img/jpg/main-background-retina.jpg 2x" width="1920" height="880" alt="Образец микросхемы.">
+                    </picture>
+                  </div>
                 </a>
               </article>
             </li>
             <li class="products-list__item">
               <article class="product-card">
                 <a class="product-card__link" href="#">
-                  <h3>Комплектующие для светотехники</h3>
+                  <h3>Комплектующие<br> для светотехники</h3>
                   <button class="product-card__button btn btn--product" href="#"></button>
-                  <img class="product-card__image product-card__image--desktop" width="350" height="650" src="./img/jpg/product-card-3.jpg" srcset="./img/jpg/product-card-3-retina.jpg" alt="Образец комплектующих печатной платы.">
-                  <img class="product-card__image product-card__image--tablet" width="670" height="250" src="./img/jpg/product-card-tablet-3.jpg" srcset="./img/jpg/product-card-tablet-3-retina.jpg" alt="Образец печатной платы.">
-                  <img class="product-card__image product-card__image--mobile" width="270" height="250" src="./img/jpg/product-card-mobile-3.jpg" srcset="./img/jpg/product-card-mobile-3-retina.jpg" alt="Образец печатной платы.">
+                  <div class="product-card__image-wrapper product-card__image-wrapper--3">
+                    <picture>
+                      <source type="image/webp" srcset="./img/jpg/main-background.webp 1x, ./img/jpg/main-background-retina.webp 2x">
+                      <img src="./img/jpg/main-background.jpg" srcset="./img/jpg/main-background-retina.jpg 2x" width="1920" height="880" alt="Образец микросхемы.">
+                    </picture>
+                  </div>
                 </a>
               </article>
             </li>
@@ -188,8 +199,8 @@
               <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
               <label class="visually-hidden" for="user-name">Введите ваше имя</label>
             </div>
-            <div class="feedback-form__field">
-              <input type="number" name="user-number" id="user-number" placeholder="Телефон" required>
+            <div class="feedback-form__field feedback-form__field--number">
+              <input type="text" name="user-number" id="user-number" placeholder="Телефон" required>
               <label class="visually-hidden" for="user-number">Введите ваш номер телефона</label>
             </div>
             <div class="feedback-form__field feedback-form__field--question">
@@ -198,7 +209,7 @@
             </div>
             <div class="feedback-form__field feedback-form__field--approval">
               <input class="visually-hidden" type="checkbox" name="user-approval" id="user-approval" checked>
-              <label for="user-approval">Я согласен на обработку  персональных данных</label>
+              <label for="user-approval"><span>Я согласен на обработку  персональных данных</span></label>
             </div>
             <div class="feedback-form__field feedback-form__field--submit">
               <button class="btn btn--form-submit" type="submit" id="submit">Задать вопрос</button>
@@ -234,7 +245,7 @@
               </a>
             </li>
             <li class="main-footer__social-item">
-              <a class="main-footer__social-link-icon" class="main-footer__social-link" href="#">
+              <a class="main-footer__social-link" class="main-footer__social-link" href="#">
                 <svg class="main-footer__social-link-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/sprite_auto.svg#pintrest-icon"></use>
                 </svg>
@@ -242,7 +253,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__categories-wrapper">
+        <div class="main-footer__categories-wrapper main-footer__categories-wrapper--no-js">
           <div class="main-footer__categories-title-wrapper">
             <h3 class="main-footer__categories-title">Разделы сайта</h3>
             <button class="main-footer__categories-button main-footer__categories-button--closed" type="button"></button>
@@ -271,12 +282,12 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__categories-wrapper">
+        <div class="main-footer__categories-wrapper main-footer__categories-wrapper--contacts  main-footer__categories-wrapper--no-js">
           <div class="main-footer__categories-title-wrapper">
             <h3 class="main-footer__categories-title">Наш офис</h3>
             <button class="main-footer__categories-button main-footer__categories-button--closed" type="button"></button>
           </div>
-          <ul class="main-footer__categories-list">
+          <ul class="main-footer__categories-list main-footer__categories-list--no-js">
             <li class="main-footer__categories-item">
               <address class="main-footer__address">г. Мытищи, Олимпийский проспект, д.10</address>
             </li>
@@ -309,7 +320,7 @@
           <label class="visually-hidden" for="user-name">Введите ваше имя</label>
         </div>
         <div class="feedback-form__field">
-          <input type="number" name="user-number" id="user-number" placeholder="Телефон" required>
+          <input type="text" name="user-number" id="user-number" data-phone-pattern placeholder="Телефон" required>
           <label class="visually-hidden" for="user-number">Введите ваш номер телефона</label>
         </div>
         <div class="feedback-form__field feedback-form__field--question">

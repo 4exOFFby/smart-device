@@ -1,6 +1,6 @@
 .products {
   background-color: #041827;
-  padding: 70px 0 140px 0;
+  padding: 65px 0 140px 0;
 
   h2 {
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -10,7 +10,7 @@
     line-height: 51px;
     color: #ffffff;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -18,14 +18,25 @@
   display: none;
 }
 
+@media (max-width: 1023px) {
+  .products {
+    padding-top: 56px;
+    padding-bottom: 75px;
+
+    h2 {
+      margin-bottom: 37px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .products {
-    padding: 50px 0 86px 0;
+    padding: 47px 0 86px 0;
 
     h2 {
       font-size: 28px;
       line-height: 39px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 

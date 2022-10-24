@@ -1,17 +1,23 @@
 .main-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 0 35px 0;
+  justify-content: flex-start;
+  padding: 22px 60px 35px 0;
 }
 
 .main-navigation__link {
-  margin-right: 30px;
+  margin-right: auto;
+  margin-top: 8px;
+}
+
+.main-navigation__callback-button {
+  margin-left: 146px;
+  margin-bottom: 2px;
 }
 
 @media (max-width: 1023px) {
   .main-navigation {
-    padding: 20px 0 25px 0;
+    padding: 12px 18px 25px 0;
   }
 
   .main-navigation__callback-button {
@@ -21,7 +27,7 @@
 
 @media (max-width: 767px) {
   .main-navigation {
-    padding: 10px 0 20px 0;
+    padding: 3px 0 20px 0;
   }
 
   .main-navigation__callback-button {
