@@ -2256,7 +2256,7 @@ button,
   }
 
   .main-screen {
-    padding: 88px 0 190px 0;
+    padding: 94px 0 190px 0;
   }
 
   .main-screen h2 {
@@ -2521,6 +2521,14 @@ button,
 @media (max-width: 767px) and (min-width: 320px) {
   .navigation-info__text {
     display: none;
+  }
+
+  .navigation-info__link--mail {
+    margin-bottom: 1px;
+  }
+
+  .navigation-info__link--tell {
+    margin-bottom: 1px;
   }
 
   .navigation-info {
