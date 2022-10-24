@@ -114,7 +114,9 @@
   }
 
   .main-footer__categories-list {
+    display: none;
     width: 100%;
+    margin-top: 15px;
   }
 
   .main-footer__categories-list--navigation {
@@ -129,10 +131,15 @@
     border-bottom: 2px solid rgba(248, 253, 255, 0.7);
   }
 
+  .main-footer__categories-wrapper:nth-child(even) {
+    border-bottom: none;
+  }
+
   .main-footer__categories-title-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .main-footer__categories-button {
@@ -152,8 +159,26 @@
     position: absolute;
     top: 10px;
     left: 4px;
-    width: 15px;
-    height: 2px;
+    width: 16px;
+    height: 3px;
     background-color: #c4c4c4;
+  }
+
+  .main-footer__categories-button::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 11px;
+    width: 3px;
+    height: 16px;
+    background-color: #c4c4c4;
+  }
+
+  .main-footer__categories-list--opened {
+    display: block;
+  }
+
+  .main-footer__categories-button--opened::after {
+    display: none;
   }
 }

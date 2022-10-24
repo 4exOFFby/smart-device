@@ -1,5 +1,22 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {modalOpenHandler, buttonOpen} from './modules/modal';
+import {scrollHandler} from './header-scroll';
+import {scrollFeedbackHandler, scrollButton} from './scroll-to-feedback';
+import {textHiddenHandler, buttonMoreInfo, aboutParagraphs} from './about-as';
+import {footerButtons, footerMenuHandler} from './footer-popup';
+
+buttonOpen.addEventListener('click', (evt) => modalOpenHandler(evt));
+
+window.onscroll = () => scrollHandler();
+
+scrollButton.addEventListener('click', (evt) => scrollFeedbackHandler(evt));
+
+buttonMoreInfo.addEventListener('click', (evt) => textHiddenHandler(evt, aboutParagraphs));
+
+footerButtons[0].addEventListener('click', (evt) => footerMenuHandler(evt, 0, 1));
+footerButtons[1].addEventListener('click', (evt) => footerMenuHandler(evt, 1, 0));
+
 
 // ---------------------------------
 
