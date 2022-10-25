@@ -19,6 +19,10 @@
   margin-left: 15px;
 }
 
+.main-footer__social-link:hover {
+  opacity: 0.8;
+}
+
 .main-footer__social-logo-wrapper {
   margin-right: auto;
 }
@@ -80,10 +84,20 @@
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
   display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .main-footer__categories-button {
   display: none;
+}
+
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .main-footer__categories-wrapper--contacts {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -102,6 +116,7 @@
     justify-content: space-between;
     margin-bottom: 23px;
     margin-right: 0;
+    width: 100%;
   }
 
   .main-footer__logo-link {
@@ -172,6 +187,7 @@
 
   .main-footer__categories-wrapper--contacts {
     padding-bottom: 12px;
+    padding-right: 18px;
   }
 
   .main-footer__categories-wrapper:nth-child(even) {

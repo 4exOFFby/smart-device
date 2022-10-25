@@ -73,6 +73,8 @@
 
 @media (max-width: 1023px) {
   .product-card {
+    width: 100%;
+
     br {
       display: block;
     }
@@ -88,17 +90,20 @@
 
   .product-card__link {
     height: 250px;
-    max-width: 670px;
+    width: 100%;
+    max-width: 1023px;
     display: flex;
   }
 
   .product-card__image-wrapper {
-    max-width: 670px;
+    width: 100%;
+    max-width: 1023px;
     max-height: 250px;
     overflow: hidden;
 
     img {
-      max-width: 670px;
+      width: 100%;
+      max-width: 1023px;
       height: 250px;
       object-fit: none;
     }
@@ -106,7 +111,8 @@
 
   .product-card__image-wrapper--1 {
     img {
-      width: 670px;
+      width: 100%;
+      max-width: 1023px;
       height: 810px;
       object-position: -440px -630px;
     }
@@ -114,7 +120,8 @@
 
   .product-card__image-wrapper--2 {
     img {
-      width: 670px;
+      width: 100%;
+      max-width: 1023px;
       height: 590px;
       object-position: -839px -343px;
     }
@@ -122,17 +129,18 @@
 
   .product-card__image-wrapper--3 {
     img {
-      width: 671px;
-      height: 710px;
-      object-position: -156px -310px;
+      width: 100%;
+      max-width: 1023px;
+      height: 744px;
       object-fit: cover;
+      object-position: -641px -492px;
     }
   }
 }
 
 @media (max-width: 767px) {
   .product-card {
-    width: 270px;
+    width: 100%;
     height: 250px;
 
     h3 {
@@ -143,24 +151,18 @@
     }
   }
 
-  .products-list__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .product-card__link {
     height: 250px;
-    width: 270px;
+    width: 100%;
   }
 
   .product-card__image-wrapper {
-    width: 270px;
+    width: 100%;
     max-height: 250px;
     overflow: hidden;
 
     img {
-      width: 270px;
+      width: 100%;
       height: 250px;
       object-fit: cover;
       overflow: hidden;
@@ -169,7 +171,7 @@
 
   .product-card__image-wrapper--1 {
     img {
-      width: 270px;
+      width: 100%;
       height: 810px;
       object-position: -460px -320px;
     }
@@ -177,7 +179,7 @@
 
   .product-card__image-wrapper--2 {
     img {
-      width: 270px;
+      width: 100%;
       height: 680px;
       object-position: -348px -430px;
     }
@@ -185,7 +187,7 @@
 
   .product-card__image-wrapper--3 {
     img {
-      width: 271px;
+      width: 100%;
       height: 746px;
       object-position: -981px -360px;
     }

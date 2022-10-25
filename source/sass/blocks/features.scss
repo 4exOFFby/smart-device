@@ -1,0 +1,17 @@
+.features {
+  padding: 120px 0;
+}
+
+@media (max-width: 1023px) {
+  .features {
+    padding: 80px 0;
+    padding-bottom: 76px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features {
+    padding: 50px 0;
+    padding-bottom: 48px;
+  }
+}

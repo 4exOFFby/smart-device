@@ -41,7 +41,7 @@
   display: flex;
   width: 160px;
   min-height: 40px;
-  padding: 10px 15px;
+  padding: 11px 15px;
 }
 
 .btn--form-call {
@@ -56,7 +56,7 @@
   color: #f2f5f7;
   background-color: #00b2ff;
   border-radius: 3px;
-  padding: 15px 25px;
+  padding: 17px 25px;
   display: flex;
   width: 410px;
   min-height: 55px;
@@ -64,11 +64,11 @@
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 16px;
-    padding: 10px 30px;
+    padding: 12px 30px;
     width: 100%;
     display: flex;
     justify-content: center;
-    min-height: 40px;
+    min-height: 39px;
   }
 }
 
