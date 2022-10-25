@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {modalOpenHandler, buttonOpen} from './modules/modal';
 import {scrollHandler} from './modules/header-scroll';
-import {scrollFeedbackHandler, scrollButton} from './modules/scroll-to-feedback';
+import {scrollFeedbackHandler, scrollButton, scrollSection} from './modules/scroll-to-feedback';
 import {textHiddenHandler, buttonMoreInfo, aboutParagraphs} from './modules/about-as';
 import {footerButtons, footerMenuHandler} from './modules/footer-popup';
 import {renderPhoneNumberMask} from './modules/phone-mask';
@@ -15,7 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
     buttonOpen.addEventListener('click', (evt) => modalOpenHandler(evt));
   }
 
-  window.onscroll = () => scrollHandler();
+  if (scrollSection) {
+    window.onscroll = () => scrollHandler();
+  }
 
   if (scrollButton) {
     scrollButton.addEventListener('click', (evt) => scrollFeedbackHandler(evt));

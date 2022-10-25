@@ -1,12 +1,14 @@
 const scrollButton = document.querySelector('.main-screen__link');
+const scrollSection = document.querySelector('#feedback');
 
 const scrollFeedbackHandler = (evt) => {
   evt.preventDefault();
-  const element = document.querySelector('#feedback');
-  element.scrollIntoView({
-    block: 'start',
-    behavior: 'smooth',
-  });
+  if (scrollSection) {
+    scrollSection.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+    });
+  }
 };
 
-export {scrollFeedbackHandler, scrollButton};
+export {scrollFeedbackHandler, scrollButton, scrollSection};

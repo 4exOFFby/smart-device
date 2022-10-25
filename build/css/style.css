@@ -1051,6 +1051,7 @@ button,
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -1075,6 +1076,7 @@ button,
 .main-screen {
   background-color: #041827;
   background-image: url("../img/jpg/main-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 197px 0 280px 250px;
@@ -1272,7 +1274,7 @@ button,
   position: absolute;
   top: 48px;
   left: 40px;
-  display: inline-block;
+  display: block;
   width: 170px;
 }
 
@@ -2402,7 +2404,7 @@ button,
   }
 
   .products__short-text {
-    display: inline-block;
+    display: block;
   }
 
   .products-list__item {
