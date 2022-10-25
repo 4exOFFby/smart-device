@@ -83,6 +83,8 @@
     color: #ffffff;
     opacity: 0.8;
     cursor: pointer;
+    display: block;
+    margin-top: 14px;
   }
 
   label::before {
@@ -92,8 +94,8 @@
     border: 1px solid #ffffff;
     border-radius: 2px;
     position: absolute;
-    top: 15px;
-    left: -27px;
+    top: 8px;
+    left: -25px;
     cursor: pointer;
   }
 
@@ -237,7 +239,7 @@
 
   .feedback-form__field--approval {
     width: 235px;
-    margin-top: 23px;
+    margin-top: 15px;
     padding-left: 26px;
 
     input {
@@ -279,10 +281,15 @@
     width: 230px;
     order: 2;
     margin-top: 12px;
+    padding-left: 29px;
+
+    label {
+      margin-top: 6px;
+    }
 
     label::before {
-      top: 7px;
-      left: -23px;
+      top: 6px;
+      left: -26px;
     }
   }
 
