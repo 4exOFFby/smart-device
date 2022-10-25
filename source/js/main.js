@@ -1,28 +1,39 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {modalOpenHandler, buttonOpen} from './modules/modal';
-import {scrollHandler} from './header-scroll';
-import {scrollFeedbackHandler, scrollButton} from './scroll-to-feedback';
-import {textHiddenHandler, buttonMoreInfo, aboutParagraphs} from './about-as';
-import {footerButtons, footerMenuHandler} from './footer-popup';
-import {renderPhoneNumberMask} from './phone-mask';
+import {scrollHandler} from './modules/header-scroll';
+import {scrollFeedbackHandler, scrollButton} from './modules/scroll-to-feedback';
+import {textHiddenHandler, buttonMoreInfo, aboutParagraphs} from './modules/about-as';
+import {footerButtons, footerMenuHandler} from './modules/footer-popup';
+import {renderPhoneNumberMask} from './modules/phone-mask';
 
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-  buttonOpen.addEventListener('click', (evt) => modalOpenHandler(evt));
+  if (buttonOpen) {
+    buttonOpen.addEventListener('click', (evt) => modalOpenHandler(evt));
+  }
 
   window.onscroll = () => scrollHandler();
 
-  scrollButton.addEventListener('click', (evt) => scrollFeedbackHandler(evt));
+  if (scrollButton) {
+    scrollButton.addEventListener('click', (evt) => scrollFeedbackHandler(evt));
+  }
 
-  buttonMoreInfo.addEventListener('click', (evt) => textHiddenHandler(evt, aboutParagraphs));
+  if (buttonMoreInfo) {
+    buttonMoreInfo.addEventListener('click', (evt) => textHiddenHandler(evt, aboutParagraphs));
+  }
 
   renderPhoneNumberMask();
 
-  footerButtons[0].addEventListener('click', (evt) => footerMenuHandler(evt, 0, 1));
-  footerButtons[1].addEventListener('click', (evt) => footerMenuHandler(evt, 1, 0));
+  if (footerButtons[0]) {
+    footerButtons[0].addEventListener('click', (evt) => footerMenuHandler(evt, 0, 1));
+  }
+
+  if (footerButtons[1]) {
+    footerButtons[1].addEventListener('click', (evt) => footerMenuHandler(evt, 1, 0));
+  }
 
   // Utils
   // ---------------------------------

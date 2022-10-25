@@ -13,3 +13,12 @@
     row-gap: 30px;
   }
 }
+
+@media (max-width: 767px) {
+  .products-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

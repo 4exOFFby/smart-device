@@ -6,9 +6,17 @@ footerPopupContainers.forEach((item) => item.classList.remove('main-footer__cate
 
 const footerMenuHandler = (evt, indexOn, indexOff) => {
   evt.target.classList.toggle('main-footer__categories-button--opened');
-  footerLists[indexOn].classList.toggle('main-footer__categories-list--opened');
-  footerLists[indexOff].classList.remove('main-footer__categories-list--opened');
-  footerButtons[indexOff].classList.remove('main-footer__categories-button--opened');
+  if (footerLists[indexOn]) {
+    footerLists[indexOn].classList.toggle('main-footer__categories-list--opened');
+  }
+
+  if (footerLists[indexOff]) {
+    footerLists[indexOff].classList.remove('main-footer__categories-list--opened');
+  }
+
+  if (footerButtons[indexOff]) {
+    footerButtons[indexOff].classList.remove('main-footer__categories-button--opened');
+  }
 };
 
 

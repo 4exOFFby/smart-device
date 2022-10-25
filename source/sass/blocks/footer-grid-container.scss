@@ -6,6 +6,7 @@
 @media (max-width: 1023px) {
   .footer-grid-container {
     display: grid;
+    justify-content: center;
     grid-template-columns: 220px 340px;
     column-gap: 110px;
     padding-right: 45px;

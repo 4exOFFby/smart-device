@@ -22,6 +22,4 @@ const modalCloseHandler = () => {
   inputName.value = '';
 };
 
-buttonOpen.addEventListener('click', modalOpenHandler);
-
 export {modalOpenHandler, buttonOpen};
