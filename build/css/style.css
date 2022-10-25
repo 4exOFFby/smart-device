@@ -1051,6 +1051,7 @@ button,
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
   display: inline-block;
+  cursor: pointer;
 }
 
 .main-footer__categories-link:hover,
