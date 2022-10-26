@@ -85,6 +85,10 @@
     cursor: pointer;
     display: block;
     margin-top: 14px;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   label::before {

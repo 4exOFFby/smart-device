@@ -4,7 +4,7 @@ import {modalOpenHandler, buttonOpen} from './modules/modal';
 import {scrollHandler} from './modules/header-scroll';
 import {scrollFeedbackHandler, scrollButton, scrollSection} from './modules/scroll-to-feedback';
 import {textHiddenHandler, buttonMoreInfo, aboutParagraphs} from './modules/about-as';
-import {footerButtons, footerMenuHandler} from './modules/footer-popup';
+import {footerButtons, footerMenuHandler, footerPopupButtons} from './modules/footer-popup';
 import {renderPhoneNumberMask} from './modules/phone-mask';
 
 
@@ -30,11 +30,11 @@ window.addEventListener('DOMContentLoaded', () => {
   renderPhoneNumberMask();
 
   if (footerButtons[0]) {
-    footerButtons[0].addEventListener('click', (evt) => footerMenuHandler(evt, 0, 1));
+    footerPopupButtons[0].addEventListener('click', () => footerMenuHandler(0, 1));
   }
 
   if (footerButtons[1]) {
-    footerButtons[1].addEventListener('click', (evt) => footerMenuHandler(evt, 1, 0));
+    footerPopupButtons[1].addEventListener('click', () => footerMenuHandler(1, 0));
   }
 
   // Utils
