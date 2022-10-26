@@ -9,6 +9,10 @@
 }
 
 .product-card {
+  &:hover {
+    box-shadow: 0 0 20px rgba(255, 252, 252, 0.5);
+  }
+
   br {
     display: none;
   }

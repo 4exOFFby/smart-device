@@ -1,13 +1,14 @@
 const footerPopupContainers = document.querySelectorAll('.main-footer__categories-wrapper');
 const footerButtons = document.querySelectorAll('.main-footer__categories-button');
 const footerLists = document.querySelectorAll('.main-footer__categories-list');
+const footerPopupButtons = document.querySelectorAll('.main-footer__categories-title-wrapper');
 
 footerPopupContainers.forEach((item) => item.classList.remove('main-footer__categories-wrapper--no-js'));
 
-const footerMenuHandler = (evt, indexOn, indexOff) => {
-  evt.target.classList.toggle('main-footer__categories-button--opened');
+const footerMenuHandler = (indexOn, indexOff) => {
   if (footerLists[indexOn]) {
     footerLists[indexOn].classList.toggle('main-footer__categories-list--opened');
+    footerButtons[indexOn].classList.toggle('main-footer__categories-button--opened');
   }
 
   if (footerLists[indexOff]) {
@@ -20,4 +21,4 @@ const footerMenuHandler = (evt, indexOn, indexOff) => {
 };
 
 
-export {footerButtons, footerMenuHandler};
+export {footerButtons, footerMenuHandler, footerPopupButtons};
