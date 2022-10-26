@@ -73,6 +73,11 @@
   grid-row: 5/6;
   padding-left: 36px;
 
+  &:focus-within {
+    outline: 1px solid #ffffff;
+    outline-offset: -5px;
+  }
+
   label {
     position: relative;
     font-family: "PT Mono", "Arial", sans-serif;
@@ -84,7 +89,9 @@
     opacity: 0.8;
     cursor: pointer;
     display: block;
+    width: 195px;
     margin-top: 14px;
+    padding-bottom: 14px;
 
     &:hover {
       opacity: 0.6;
@@ -147,7 +154,8 @@
   display: flex;
   flex-direction: column;
   width: 500px;
-  min-height: 610px;
+  margin-right: 0;
+
 
   h2 {
     font-size: 30px;
@@ -163,7 +171,7 @@
   }
 
   input {
-    width: 420px;
+    width: 100%;
   }
 
   .feedback-form__field {
@@ -181,7 +189,7 @@
   }
 
   .feedback-form__button-submit {
-    width: 420px;
+    width: 100%;
   }
 
   .feedback-form__button-close {
@@ -207,7 +215,6 @@
 .feedback-form--open {
   position: fixed;
 }
-
 
 @media (max-width: 1023px) {
   .feedback-form {
