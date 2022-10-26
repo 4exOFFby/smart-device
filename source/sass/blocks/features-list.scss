@@ -108,7 +108,9 @@
   }
 
   .features-list__icon {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    width: 30px;
+    height: 30px;
   }
 
   .features-list__item {
@@ -145,6 +147,10 @@
 
     br {
       display: none;
+    }
+
+    .features-list__icon {
+      margin-bottom: 15px;
     }
   }
 }

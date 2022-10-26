@@ -25,7 +25,7 @@ const renderPhoneNumberMask = () => {
       if (!reg.test(evt.target.value) || evt.target.value.length < 5 || keyCode > 47 && keyCode < 58) {
         evt.target.value = newValue;
       }
-      if (evt.type === 'blur' && evt.target.value.length < 5) {
+      if (evt.type === 'blur' && evt.target.value.length < 18) {
         evt.target.value = '';
       }
     }

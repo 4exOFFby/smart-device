@@ -212,7 +212,7 @@
               <label class="visually-hidden" for="user-name">Введите ваше имя</label>
             </div>
             <div class="feedback-form__field feedback-form__field--number">
-              <input type="text" name="user-number" id="user-number" placeholder="Телефон" required>
+              <input type="text" name="user-number" id="user-number" minlength="17" placeholder="Телефон" required>
               <label class="visually-hidden" for="user-number">Введите ваш номер телефона</label>
             </div>
             <div class="feedback-form__field feedback-form__field--question">
@@ -220,7 +220,7 @@
               <label class="visually-hidden" for="user-question">Введите ваш вопрос</label>
             </div>
             <div class="feedback-form__field feedback-form__field--approval">
-              <input class="visually-hidden" type="checkbox" name="user-approval" id="user-approval" checked>
+              <input class="visually-hidden" type="checkbox" name="user-approval" id="user-approval" checked required>
               <label for="user-approval">Я согласен на обработку  персональных данных</label>
             </div>
             <div class="feedback-form__field feedback-form__field--submit">
@@ -265,7 +265,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__categories-wrapper main-footer__categories-wrapper--no-js">
+        <div class="main-footer__categories-wrapper main-footer__categories-wrapper--navigation main-footer__categories-wrapper--no-js">
           <div class="main-footer__categories-title-wrapper">
             <h3 class="main-footer__categories-title">Разделы сайта</h3>
             <button class="main-footer__categories-button main-footer__categories-button--closed" type="button"></button>
