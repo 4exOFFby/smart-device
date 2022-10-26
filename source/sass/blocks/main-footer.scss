@@ -65,6 +65,12 @@
   width: 415px;
 }
 
+.main-footer__categories-list--address {
+  display: flex;
+  flex-direction: column;
+  min-height: 143px;
+}
+
 .main-footer__categories-item:not(:last-child) {
   margin-bottom: 6px;
   margin-right: 5px;
