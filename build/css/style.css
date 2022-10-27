@@ -1321,6 +1321,7 @@ button,
   left: 40px;
   display: block;
   width: 170px;
+  z-index: 1;
 }
 
 .product-card__button {
