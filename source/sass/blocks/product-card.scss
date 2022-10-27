@@ -3,6 +3,27 @@
   max-width: 350px;
 }
 
+.product-card__link::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #00b2ff;
+  border-radius: 3px 0 0 0;
+  background-image: url("../img/svg/arrow-right-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6px;
+
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .product-card__image--tablet,
 .product-card__image--mobile {
   display: none;
