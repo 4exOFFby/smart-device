@@ -1325,6 +1325,9 @@ button,
 
 .product-card__button {
   position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
   bottom: 0;
   right: 0;
 }
