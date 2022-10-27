@@ -99,33 +99,6 @@
   }
 }
 
-.btn--product {
-  width: 60px;
-  height: 60px;
-  background-color: #00b2ff;
-  border-radius: 3px 0 0 0;
-
-  @media (max-width: 767px) {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.btn--product::before {
-  content: "";
-  width: 5px;
-  height: 10px;
-  background-image: url("../img/svg/arrow-right-icon.svg");
-  position: absolute;
-  top: 25px;
-  left: 29px;
-
-  @media (max-width: 767px) {
-    top: 15px;
-    left: 19px;
-  }
-}
-
 .btn--form-submit {
   background-color: #041427;
   border-radius: 3px;
