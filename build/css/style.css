@@ -1309,9 +1309,7 @@ button,
 
 .product-card__button {
   position: absolute;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   bottom: 0;
   right: 0;
   width: 60px;
