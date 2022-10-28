@@ -1,3 +1,5 @@
+const form = document.querySelector('.feedback__form');
+
 const renderPhoneNumberMask = () => {
   [].forEach.call(document.querySelectorAll('input[name="user-number"]'), function (input) {
     let keyCode;
@@ -36,14 +38,24 @@ const renderPhoneNumberMask = () => {
     input.addEventListener('blur', mask, false);
     input.addEventListener('keydown', mask, false);
 
-    let phoneInput = document.querySelector('input[name="user-number"]');
-    phoneInput.addEventListener('change', () => {
+    form.addEventListener('change', () => {
+      let phoneInput = document.querySelector('input[name="user-number"]');
       let phoneInputLength = phoneInput.value.length;
-      phoneInput.addEventListener('blur', (e) => {
-        if (phoneInputLength < 18) {
+      phoneInput.addEventListener('focus', (e) => {
+        if (phoneInputLength < 4) {
           phoneInput.setCustomValidity('Введите номер целеком');
           e.preventDefault();
         }
+      });
+
+      phoneInput.addEventListener('change', (e) => {
+        if (phoneInputLength < 18 && phoneInputLength > 4) {
+          phoneInput.setCustomValidity('Введите номер целеком');
+          e.preventDefault();
+        }
+      });
+
+      phoneInput.addEventListener('blur', () => {
         if (phoneInputLength >= 18) {
           phoneInput.setCustomValidity('');
         }
