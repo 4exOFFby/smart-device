@@ -1654,6 +1654,11 @@ button,
   flex-direction: column;
   width: 500px;
   margin-right: 0;
+  height: 610px;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .feedback-form--modal h2 {
@@ -1682,6 +1687,11 @@ button,
   -ms-flex-order: 2;
   order: 2;
   margin-top: 5px;
+  padding-left: 29px;
+}
+
+.feedback-form--modal .feedback-form__field--approval label {
+  display: inline;
 }
 
 .feedback-form--modal .feedback-form__field--approval label::before {
@@ -1731,6 +1741,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2747,12 +2761,6 @@ button,
 @media (min-width: 1023px) and (max-width: 1150px) {
   .feedback .feedback__container {
     background-size: 350px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1250px) {
-  .modal-feedback__form {
-    scale: 0.7;
   }
 }
 

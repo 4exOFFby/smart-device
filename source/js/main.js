@@ -7,10 +7,10 @@ import {textHiddenHandler, buttonMoreInfo, aboutParagraphs} from './modules/abou
 import {footerButtons, footerMenuHandler, footerPopupButtons} from './modules/footer-popup';
 import {renderPhoneNumberMask} from './modules/phone-mask';
 
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+
   if (buttonOpen) {
     buttonOpen.addEventListener('click', (evt) => modalOpenHandler(evt));
   }

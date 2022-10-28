@@ -5,6 +5,7 @@ const renderPhoneNumberMask = () => {
       let pos = evt.target.selectionStart;
       if (pos < 3) {
         evt.preventDefault();
+        evt.target.selectionStart = 4;
       }
       let matrix = '+7 (___) __-__-___';
       let i = 0;
@@ -26,7 +27,7 @@ const renderPhoneNumberMask = () => {
         evt.target.value = newValue;
       }
       if (evt.type === 'blur' && evt.target.value.length < 18) {
-        evt.target.value = '';
+        evt.target.value = evt.target.value;
       }
     }
 
@@ -35,6 +36,19 @@ const renderPhoneNumberMask = () => {
     input.addEventListener('blur', mask, false);
     input.addEventListener('keydown', mask, false);
 
+    let phoneInput = document.querySelector('input[name="user-number"]');
+    phoneInput.addEventListener('change', () => {
+      let phoneInputLength = phoneInput.value.length;
+      phoneInput.addEventListener('blur', (e) => {
+        if (phoneInputLength < 18) {
+          phoneInput.setCustomValidity('Введите номер целеком');
+          e.preventDefault();
+        }
+        if (phoneInputLength >= 18) {
+          phoneInput.setCustomValidity('');
+        }
+      });
+    });
   });
 };
 
