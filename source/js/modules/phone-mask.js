@@ -28,7 +28,7 @@ const renderPhoneNumberMask = () => {
       if (!reg.test(evt.target.value) || evt.target.value.length < 5 || keyCode > 47 && keyCode < 58) {
         evt.target.value = newValue;
       }
-      if (evt.type === 'blur' && evt.target.value.length < 18) {
+      if (evt.type === 'blur' && evt.target.value.length < 17) {
         evt.target.value = evt.target.value;
       }
     }
@@ -49,14 +49,14 @@ const renderPhoneNumberMask = () => {
       });
 
       phoneInput.addEventListener('change', (e) => {
-        if (phoneInputLength < 18 && phoneInputLength > 4) {
+        if (phoneInputLength < 17 && phoneInputLength > 4) {
           phoneInput.setCustomValidity('Введите номер целеком');
           e.preventDefault();
         }
       });
 
       phoneInput.addEventListener('blur', () => {
-        if (phoneInputLength >= 18) {
+        if (phoneInputLength >= 17) {
           phoneInput.setCustomValidity('');
         }
       });
