@@ -1728,10 +1728,6 @@ button,
   color: #ffffff;
 }
 
-.feedback-form--open {
-  position: fixed;
-}
-
 .modal-feedback {
   position: fixed;
   top: 0;

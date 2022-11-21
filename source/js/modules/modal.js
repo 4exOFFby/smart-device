@@ -68,7 +68,6 @@ const modalOpenHandler = (evt) => {
     document.addEventListener('keydown', stopFocusBehindModal);
     document.addEventListener('keydown', onModalEscDown);
     modal.addEventListener('click', modalCloseHandler);
-    // stopListenerOnFocus(modalForm, 'keydown');
     stopListenerOnFocus(modalForm, 'click');
     if (buttonClose) {
       buttonClose.addEventListener('click', modalCloseHandler);
